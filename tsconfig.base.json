@@ -1,0 +1,50 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "CommonJS",
+    "lib": ["es2022"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bitcoin-oracle/instrument": ["packages/libs/instrument/src/index.ts"],
+      "@meta-protocols-oracle/api": ["packages/libs/api/src/index.ts"],
+      "@meta-protocols-oracle/bitcoin": ["packages/libs/bitcoin/src/index.ts"],
+      "@meta-protocols-oracle/brc20-indexer": [
+        "packages/libs/brc20-indexer/src/index.ts"
+      ],
+      "@meta-protocols-oracle/commons": ["packages/libs/commons/src/index.ts"],
+      "@meta-protocols-oracle/persistent": [
+        "packages/libs/persistent/src/index.ts"
+      ],
+      "@meta-protocols-oracle/types": ["packages/libs/types/src/index.ts"],
+      "@meta-protocols-oracle/validator": [
+        "packages/libs/validator/src/index.ts"
+      ],
+      "@meta-protocols-oracle/validator-bis": [
+        "packages/libs/validator-bis/src/index.ts"
+      ],
+      "@meta-protocols-oracle/validator-hiro": [
+        "packages/libs/validator-hiro/src/index.ts"
+      ],
+      "@meta-protocols-oracle/validator-unisat": [
+        "packages/libs/validator-unisat/src/index.ts"
+      ],
+      "nx-stacks": ["packages/plugins/nx-stacks/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "171811933": {
+    "code": "ERR-VALIDATOR-ALREADY-REGISTERED",
+    "comment": "oracle-v1-06.clar:57"
+  },
+  "171811962": {
+    "code": "ERR-UNKNOWN-VALIDATOR",
+    "comment": "oracle-v1-06.clar:65"
+  },
+  "171811996": {
+    "code": "ERR-REQUIRED-VALIDATORS",
+    "comment": "oracle-v1-06.clar:78"
+  },
+  "171812055": {
+    "code": "ERR-UNKNOWN-VALIDATOR",
+    "comment": "oracle-v1-06.clar:95"
+  },
+  "1031198684": {
+    "code": "ERR-DUPLICATE-SIGNATURE",
+    "comment": "oracle-v1-06.clar:128"
+  },
+  "1031198685": {
+    "code": "ERR-ORDER-HASH-MISMATCH",
+    "comment": "oracle-v1-06.clar:129"
+  },
+  "1031198707": {
+    "code": "ERR-INVALID-SIGNATURE",
+    "comment": "oracle-v1-06.clar:130"
+  },
+  "1031198741": {
+    "code": "ERR-BITCOIN-TX-NOT-MINED",
+    "comment": "oracle-v1-06.clar:143"
+  },
+  "1031198801": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-v1-06.clar:161"
+  },
+  "1031198802": {
+    "code": "ERR-UKNOWN-RELAYER",
+    "comment": "oracle-v1-06.clar:162"
+  },
+  "1031199581": {
+    "code": "ERR-REQUIRED-VALIDATORS",
+    "comment": "oracle-v1-06.clar:206"
+  },
+  "1031199644": {
+    "code": "ERR-NOT-AUTHORIZED",
+    "comment": "oracle-v1-06.clar:227"
+  },
+  "1539320622": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-02.clar:102"
+  },
+  "1539320629": {
+    "code": "ERR-NOT-AUTHORIZED",
+    "comment": "oracle-registry-v1-02.clar:109"
+  },
+  "1539320654": {
+    "code": "ERR-NOT-AUTHORIZED",
+    "comment": "oracle-registry-v1-02.clar:113"
+  },
+  "1604177081": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:109"
+  },
+  "1604177110": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:117"
+  },
+  "1604177138": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:124"
+  },
+  "1604177139": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:125"
+  },
+  "1604177140": {
+    "code": "ERR-TOO-MANY-TXINS",
+    "comment": "clarity-bitcoin-v1-05.clar:126"
+  },
+  "1604177261": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:163"
+  },
+  "1604177264": {
+    "code": "ERR-TOO-MANY-TXINS",
+    "comment": "clarity-bitcoin-v1-05.clar:166"
+  },
+  "1604177292": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:173"
+  },
+  "1604177293": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:174"
+  },
+  "1604177294": {
+    "code": "ERR-TOO-MANY-TXINS",
+    "comment": "clarity-bitcoin-v1-05.clar:175"
+  },
+  "1604177322": {
+    "code": "ERR-TOO-MANY-TXINS",
+    "comment": "clarity-bitcoin-v1-05.clar:182"
+  },
+  "1604177352": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:191"
+  },
+  "1604177353": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:192"
+  },
+  "1604177354": {
+    "code": "ERR-TOO-MANY-TXOUTS",
+    "comment": "clarity-bitcoin-v1-05.clar:193"
+  },
+  "1604178067": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:213"
+  },
+  "1604178069": {
+    "code": "ERR-TOO-MANY-TXOUTS",
+    "comment": "clarity-bitcoin-v1-05.clar:215"
+  },
+  "1604178095": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:220"
+  },
+  "1604178096": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:221"
+  },
+  "1604178097": {
+    "code": "ERR-TOO-MANY-TXOUTS",
+    "comment": "clarity-bitcoin-v1-05.clar:222"
+  },
+  "1604178104": {
+    "code": "ERR-TOO-MANY-TXOUTS",
+    "comment": "clarity-bitcoin-v1-05.clar:229"
+  },
+  "1604178188": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:250"
+  },
+  "1604178190": {
+    "code": "ERR-TOO-MANY-TXOUTS",
+    "comment": "clarity-bitcoin-v1-05.clar:252"
+  },
+  "1604179060": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:324"
+  },
+  "1604179061": {
+    "code": "ERR-VARSLICE-TOO-LONG",
+    "comment": "clarity-bitcoin-v1-05.clar:325"
+  },
+  "1604179062": {
+    "code": "ERR-TOO-MANY-TXOUTS",
+    "comment": "clarity-bitcoin-v1-05.clar:326"
+  },
+  "1604179063": {
+    "code": "ERR-TOO-MANY-TXINS",
+    "comment": "clarity-bitcoin-v1-05.clar:327"
+  },
+  "1604179095": {
+    "code": "ERR-NOT-SEGWIT-TRANSACTION",
+    "comment": "clarity-bitcoin-v1-05.clar:338"
+  },
+  "1604179096": {
+    "code": "ERR-LEFTOVER-DATA",
+    "comment": "clarity-bitcoin-v1-05.clar:339"
+  },
+  "1604179155": {
+    "code": "ERR-LEFTOVER-DATA",
+    "comment": "clarity-bitcoin-v1-05.clar:356"
+  },
+  "1604180205": {
+    "code": "ERR-PROOF-TOO-SHORT",
+    "comment": "clarity-bitcoin-v1-05.clar:482"
+  },
+  "1604180208": {
+    "code": "ERR-PROOF-TOO-SHORT",
+    "comment": "clarity-bitcoin-v1-05.clar:485"
+  },
+  "1604180948": {
+    "code": "ERR-PROOF-TOO-SHORT",
+    "comment": "clarity-bitcoin-v1-05.clar:511"
+  },
+  "1735834126": {
+    "code": "ERR-NOT-AUTHORIZED",
+    "comment": "oracle-registry-v1-01.clar:101"
+  },
+  "1735834130": {
+    "code": "ERR-NOT-AUTHORIZED",
+    "comment": "oracle-registry-v1-01.clar:105"
+  },
+  "1850770982": {
+    "code": "ERR-TX-NOT-MINED",
+    "comment": "oracle-registry-v1-02.clar:67"
+  },
+  "1850770983": {
+    "code": "ERR-TX-NOT-MINED",
+    "comment": "oracle-registry-v1-02.clar:68"
+  },
+  "1850771011": {
+    "code": "ERR-TX-NOT-INDEXED",
+    "comment": "oracle-registry-v1-02.clar:75"
+  },
+  "1850771012": {
+    "code": "ERR-TX-NOT-INDEXED",
+    "comment": "oracle-registry-v1-02.clar:76"
+  },
+  "1850771040": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-02.clar:83"
+  },
+  "1850771046": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-02.clar:89"
+  },
+  "1850771073": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-02.clar:95"
+  },
+  "2268504966": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:16"
+  },
+  "2268504992": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:21"
+  },
+  "2268504996": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:25"
+  },
+  "2268505022": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:30"
+  },
+  "2268505026": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:34"
+  },
+  "2268505031": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:39"
+  },
+  "2268505056": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:43"
+  },
+  "2268505061": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:48"
+  },
+  "2268505086": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:52"
+  },
+  "2268505091": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:57"
+  },
+  "2268505154": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:78"
+  },
+  "2268505183": {
+    "code": "ERR-OUT-OF-BOUNDS",
+    "comment": "clarity-bitcoin-v1-05.clar:86"
+  },
+  "3658225414": {
+    "code": "ERR-TX-NOT-MINED",
+    "comment": "oracle-registry-v1-01.clar:57"
+  },
+  "3658225438": {
+    "code": "ERR-TX-NOT-INDEXED",
+    "comment": "oracle-registry-v1-01.clar:60"
+  },
+  "3658225445": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-01.clar:67"
+  },
+  "3658225475": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-01.clar:76"
+  },
+  "3658225503": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-01.clar:83"
+  },
+  "3658225533": {
+    "code": "ERR-PAUSED",
+    "comment": "oracle-registry-v1-01.clar:92"
+  }
+}
