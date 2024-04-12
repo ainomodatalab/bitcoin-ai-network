@@ -1,0 +1,117 @@
+{
+  "name": "libs-brc20-indexer",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/brc20-indexer/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/brc20-indexer",
+        "main": "packages/libs/brc20-indexer/src/index.ts",
+        "tsConfig": "packages/libs/brc20-indexer/tsconfig.lib.json",
+        "assets": ["packages/libs/brc20-indexer/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/libs/brc20-indexer/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/libs/brc20-indexer/**/*.ts",
+          "packages/libs/brc20-indexer/package.json"
+        ]
+      }
+    },
+    "contract-deploy": {
+      "executor": "nx-stacks:deploy",
+      "options": {
+        "clarinetPath": "packages/contracts/bitcoin-oracle",
+        "contracts": [
+          "utils",
+          "clarity-bitcoin-v1-05",
+          "oracle-registry-v1-01",
+          "oracle-registry-v1-02",
+          "oracle-v1-06"
+        ],
+        "deployerSecretKey": "${STACKS_DEPLOYER_ACCOUNT_SECRET}",
+        "puppetURL": "${STACKS_PUPPET_URL}",
+        "stacksAPIURL": "${STACKS_API_URL}"
+      }
+    },
+    "contract-setup": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project tsconfig.lib.json src/setup/setupIndexer.ts",
+        "cwd": "packages/libs/brc20-indexer"
+      },
+      "dependsOn": [
+        {
+          "target": "build"
+        },
+        {
+          "target": "contract-deploy"
+        }
+      ]
+    },
+    "setup": {
+      "executor": "nx:noop",
+      "dependsOn": [
+        {
+          "target": "contract-deploy"
+        },
+        {
+          "target": "contract-setup"
+        }
+      ]
+    },
+    "contract-generate": {
+      "executor": "nx-stacks:contract-generate",
+      "options": {
+        "stacksAPIURL": "${STACKS_API_URL}",
+        "outputPath": "packages/libs/brc20-indexer/src/generated",
+        "targets": [
+          {
+            "name": "indexer",
+            "principal": "${STACKS_DEPLOYER_ACCOUNT_ADDRESS}",
+            "contracts": [
+              "clarity-bitcoin-v1-05",
+              "oracle-registry-v1-01",
+              "oracle-registry-v1-02",
+              "oracle-v1-06"
+            ],
+            "packageName": "../codegenImport"
+          }
+        ]
+      }
+    },
+    "contract-list-generate": {
+      "executor": "nx-stacks:contract-list-generate",
+      "options": {
+        "outputPath": "packages/libs/brc20-indexer/src/generated",
+        "clarinetDirectoryGenerateTargets": [
+          {
+            "clarinetConfigPath": "packages/contracts/bitcoin-oracle/Clarinet.toml",
+            "outputPath": "packages/libs/brc20-indexer/src/generated/bitcoin-oracle.json"
+          }
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@meta-protocols-oracle/brc20-indexer",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "clarity-codegen": "^0.3.4",
+    "@stacks/network": "^6.5.5",
+    "@stacks/transactions": "^6.7.0",
+    "@t3-oss/env-core": "^0.7.1",
+    "memoizee": "^0.4.15",
+    "zod": "^3.22.3",
+    "@nestjs/common": "^10.3.0",
+    "@iarna/toml": "^2.2.5",
+    "lodash": "^4.17.21",
+    "@meta-protocols-oracle/commons": "*",
+    "@stacks/stacks-blockchain-api-types": "^7.3.0",
+    "micro-stacks": "^1.2.1",
+    "node-fetch": "^2.7.0",
+    "@meta-protocols-oracle/types": "*",
+    "p-queue": "^6.6.2"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts"
+}

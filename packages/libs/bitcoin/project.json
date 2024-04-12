@@ -1,0 +1,43 @@
+{
+  "name": "libs-bitcoin",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/bitcoin/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/bitcoin",
+        "main": "packages/libs/bitcoin/src/index.ts",
+        "tsConfig": "packages/libs/bitcoin/tsconfig.lib.json",
+        "assets": ["packages/libs/bitcoin/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/libs/bitcoin/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/libs/bitcoin/**/*.ts",
+          "packages/libs/bitcoin/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
