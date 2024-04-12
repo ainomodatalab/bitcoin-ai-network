@@ -1,0 +1,26 @@
+{
+  "name": "@meta-protocols-oracle/api",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "@meta-protocols-oracle/types": "*",
+    "@meta-protocols-oracle/persistent": "*",
+    "@nestjs/common": "^10.3.0",
+    "@meta-protocols-oracle/commons": "*",
+    "zod": "^3.22.3",
+    "scure-btc-signer-cjs": "^1.0.1",
+    "@t3-oss/env-core": "^0.7.1",
+    "memoizee": "^0.4.15",
+    "@meta-protocols-oracle/brc20-indexer": "*",
+    "@stacks/network": "^6.5.5",
+    "@stacks/transactions": "^6.7.0",
+    "slonik": "^37.2.0",
+    "p-queue": "^6.6.2",
+    "@bitcoin-oracle/instrument": "*",
+    "got-cjs": "^12.5.4",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts"
+}
