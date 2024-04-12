@@ -1,0 +1,23 @@
+{
+  "name": "@bitcoin-ai-network/cli",
+  "version": "0.1.0",
+  "oclif": {
+    "commands": "src/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "hello": {
+        "description": "Bitcoin Ainomo Network"
+      }
+    }
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ]
+}
