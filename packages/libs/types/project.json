@@ -1,0 +1,42 @@
+{
+  "name": "libs-types",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/types",
+        "tsConfig": "packages/libs/types/tsconfig.lib.json",
+        "packageJson": "packages/libs/types/package.json",
+        "main": "packages/libs/types/src/index.ts",
+        "assets": ["packages/libs/types/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/libs/types/**/*.ts",
+          "packages/libs/types/**/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/libs/types/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs libs-types {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    }
+  },
+  "tags": []
+}

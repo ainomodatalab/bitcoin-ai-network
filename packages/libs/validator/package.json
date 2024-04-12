@@ -1,0 +1,20 @@
+{
+  "name": "@meta-protocols-oracle/validator",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "@t3-oss/env-core": "^0.7.1",
+    "memoizee": "^0.4.15",
+    "zod": "^3.22.3",
+    "@meta-protocols-oracle/commons": "*",
+    "@meta-protocols-oracle/bitcoin": "*",
+    "micro-stacks": "^1.2.1",
+    "rxjs": "^7.8.1",
+    "p-queue": "^6.6.2",
+    "@bitcoin-oracle/instrument": "*",
+    "@meta-protocols-oracle/api": "*"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts"
+}
