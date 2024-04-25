@@ -1,4 +1,4 @@
-44version: '3.7'
+444version: '3.7'
 services:
   bitcoin-sync:
     image: us-central1-docker.pkg.dev/fifth-compiler-334213/ainomo/b20/bitcoin-sync:main
