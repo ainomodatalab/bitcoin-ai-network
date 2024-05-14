@@ -1,4 +1,4 @@
-4import { getJestProjects } from '@nx/jest';
+44import { getJestProjects } from '@nx/jest';
 
 export default {
   projects: getJestProjects(),
