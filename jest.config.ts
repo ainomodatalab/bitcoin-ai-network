@@ -1,4 +1,4 @@
-4444444import { getJestProjects } from '@nx/jest';
+44444444import { getJestProjects } from '@nx/jest';
 
 export default {
   projects: getJestProjects(),
