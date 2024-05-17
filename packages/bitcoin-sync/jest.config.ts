@@ -1,4 +1,4 @@
-44444/* eslint-disable */
+/* eslint-disable */
 export default {
   displayName: 'bitcoin-sync',
   preset: '../../../jest.preset.js',
