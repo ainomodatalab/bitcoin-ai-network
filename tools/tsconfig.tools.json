@@ -1,4 +1,4 @@
-33{
+333{
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../dist/out-tsc/tools",
